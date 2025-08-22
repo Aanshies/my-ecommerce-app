@@ -9,7 +9,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       // This URL points to your backend API
-      const { data } = await axios.get('http://localhost:5000/api/products');
+      const { data } = await axios.get('https://my-ecommerce-app-backend-4z69.onrender.com/api/products');
       setProducts(data);
     };
 
