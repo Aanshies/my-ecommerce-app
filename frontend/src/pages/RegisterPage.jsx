@@ -11,7 +11,7 @@ const RegisterPage = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/users/register', {
+      const { data } = await axios.post('https://my-ecommerce-app-backend-4z69.onrender.com/api/users/register', {
         name,
         email,
         password,
