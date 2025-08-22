@@ -14,7 +14,7 @@ const LoginPage = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/users/login', {
+      const { data } = await axios.post('https://my-ecommerce-app-backend-4z69.onrender.com/api/users/login', {
         email,
         password,
       });
